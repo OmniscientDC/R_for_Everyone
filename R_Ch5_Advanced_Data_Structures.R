@@ -4,6 +4,17 @@
 
 #可用data.frame建議與excel試算表類似的行(column)與列(row)
 
+#可以用edit()直接編輯data.frame
+exam1 <- data.frame()
+exam1 <- edit(exam1) #會跳出編輯視窗
+
+exam1 <- data.frame(ID = character(), Exam1 = numeric())
+exam1 <- edit(exam1) #也可以先命名
+
+#可用subset去篩選資料
+#subset(資料表,篩選邏輯)
+subset(exam1, Exam1 >= 1)
+
 x <- 1:3
 y <- -4:-2
 q <- c("Hokey","Football","Baseball")
